@@ -21,7 +21,7 @@ int main() {
     printf("Estado digite uma letra de (A-H): \n");
     scanf(" %c", &estado1);
     printf("Codigo da Carta (ex: 01 a 04): \n");
-    scanf(" %2s", codigo1);
+    scanf(" %s", codigo1);
     printf("Nome da Cidade: \n");
     getchar(); // Limpa o buffer do teclado
     fgets(nomeCidade1, sizeof(nomeCidade1), stdin);
@@ -33,7 +33,7 @@ int main() {
     scanf(" %f", &PIB1);
     printf("Numero de Pontos Turisticos: \n");
     scanf(" %d", &pontoTuristico1);
-    PIBpcap1 = PIB1/area1;
+    PIBpcap1 = (PIB1*1000000000)/populacao1;
     Denspop1 = populacao1/area1;
 
   // INSERINDO INFORMAÇÕES DA CARTA 2
@@ -41,7 +41,7 @@ int main() {
     printf("Estado (A-H): \n");
     scanf(" %c", &estado2);
     printf("Codigo da Carta (ex: 01 a 04): \n");
-    scanf(" %3s", codigo2);
+    scanf(" %s", codigo2);
     printf("Nome da Cidade: \n");
     getchar(); // Limpa o buffer do teclado
     fgets(nomeCidade2, sizeof(nomeCidade2), stdin);
@@ -53,7 +53,7 @@ int main() {
     scanf(" %f", &PIB2);
     printf("Numero de Pontos Turisticos: \n");
     scanf(" %d", &pontoTuristico2);
-    PIBpcap2 = PIB2/area2;
+    PIBpcap2 = (PIB2 * 1000000000)/populacao2;
     Denspop2 = populacao2/area2;  
   
      //IMPRIMINDO INFORMAÇOES DA CARTA 1
@@ -73,7 +73,7 @@ int main() {
     
      printf("\nCarta 2:\n");
      printf("Estado: %c\n", estado2);
-     printf("Codigo: %s\n", codigo2);
+     printf("Codigo: %c%s\n", estado2,codigo2);
      printf("Nome da Cidade: %s", nomeCidade2);
      printf("Populacao: %d\n", populacao2);
      printf("Area: %.2f km2\n", area2);
