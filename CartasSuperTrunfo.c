@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 int main() {
-    // DECLARAÇÃO DE VARIÁVEIS
+    // DECLARANDO VARIÁVEIS
     char estado1, estado2;
     char codigo1[3], codigo2[3];
     char nomeCidade1[50], nomeCidade2[50];
@@ -37,7 +37,7 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontoTuristico1);
 
-    // CÁLCULOS CARTA 1
+    // CALCULANDO PIB PER CAPITA, DENSIDADE POP E SUPER PODER CARTA 1
     PIBpcap1 = (PIB1 * 1000000000) / populacao1;
     densPop1 = populacao1 / area1;
     superPoder1 = populacao1 + area1 + PIB1 + pontoTuristico1 + PIBpcap1 + (1.0 / densPop1);
@@ -60,12 +60,12 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontoTuristico2);
 
-    // CÁLCULOS CARTA 2
+    // CALCULANDO PIB PER CAPITA, DENSIDADE POP E SUPER PODER CARTA  2
     PIBpcap2 = (PIB2 * 1000000000) / populacao2;
     densPop2 = populacao2 / area2;
     superPoder2 = populacao2 + area2 + PIB2 + pontoTuristico2 + PIBpcap2 + (1.0 / densPop2);
 
-    // EXIBINDO AS CARTAS
+    // EXIBINDO AS INFORMAÇÕES DAS CARTAS
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %c%s\n", estado1, codigo1);
@@ -90,7 +90,7 @@ int main() {
     printf("PIB per Capita: %.2f reais\n", PIBpcap2);
     printf("Super Poder: %.2f\n", superPoder2);
 
-    // COMPARAÇÕES
+    // BATALHA DE CARTAS
     printf("\nComparação de Cartas:\n");
     printf("Populacao: Carta 1 venceu (%d)\n", populacao1 > populacao2);
     printf("Area: Carta 1 venceu (%d)\n", area1 > area2);
